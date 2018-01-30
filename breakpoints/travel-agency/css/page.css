@@ -1,16 +1,11 @@
-.container {
-  max-width: 1920px;
-  margin-left: auto;
-  margin-right: auto;
-  
-  display: flex;
-  flex-wrap: wrap;
+
+@media (min-width: 480px) {
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.card {
-  font-size: 20px;
-  width: 100%;
-}
 
 @media (min-width: 480px) and (max-width: 959px) {
   
@@ -29,7 +24,11 @@
 }
 
 @media (min-width: 1300px) {
-  
+  .container {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
   .card {
     width: 20%;
     font-size: 16px;
